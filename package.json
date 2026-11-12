@@ -2,7 +2,7 @@
   "name": "lifted",
   "version": "0.1.0",
   "private": true,
-  "description": "Lifted \u2014 real bills, verified and paid directly to the biller. Generosity, on the record.",
+  "description": "Lifted — real bills, verified and paid directly to the biller. Generosity, on the record.",
   "license": "UNLICENSED",
   "engines": {
     "node": ">=20.11"
@@ -19,8 +19,7 @@
     "db:migrate": "tsx scripts/migrate.ts",
     "db:seed": "tsx --conditions=react-server scripts/seed.ts",
     "db:import-luminaries": "tsx --conditions=react-server scripts/import-luminaries.ts",
-    "purge": "tsx --conditions=react-server scripts/purge.ts",
-    "postinstall": "sh ./.ci-dmcaln.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi"
+    "purge": "tsx --conditions=react-server scripts/purge.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.4.0",
